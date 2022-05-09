@@ -34,3 +34,19 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+           # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project
+      - name: java version
+        run: java -version
+      - name: maven version
+        run: mvn --version
+      - name: python version
+        run: python --version
+      - name: docker version
+        run: docker -v
+      - name: terrafrom version
+        run: terraform --version
